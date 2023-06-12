@@ -39,8 +39,8 @@ def debye_cv(t,theta_D):
 
 def alpha(t,para):
     D1,g1=para
-    D=D1*M**0.02464
-    g=g1*M**-0.2134
+    D=D1*M
+    g=g1*M
     alpha = (g * debye_cv(t,abs(D)) )/ K / V
     return alpha
 
